@@ -1,0 +1,111 @@
+*{
+margin: 0;
+padding: 0;
+    
+}
+
+#general{
+    margin: auto;
+    width: 1200px;
+    height: 950px;
+    /* background-color: aqua; */
+}
+
+#div1{
+    float: left;
+    /* border-style: solid; */
+    width: 60%;
+    height: 90%;
+    margin-left: 10px;
+}
+
+#div2{
+    margin-top: 50px;
+    width: 35%;
+    margin-left: 50px;
+    /* border-style: solid; */
+    display: inline-block;
+
+}
+#volver{
+    text-decoration: none;
+    border-radius: 28px;
+    width: 120px;
+
+}
+#imagenDestino{    
+    width: 90%;
+    height: 80%;
+    display: block;
+    margin: 0px auto;
+    
+}
+
+#imagenContinente{
+    width: 40%;
+    display: block;
+    margin: 0px auto;
+}
+
+#nomDestino{
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+#continenteDestino{
+    text-align: center;
+    font-size: 18px;
+    font-family: cursive;
+}
+
+#imagenContinente{
+    width: 35%;
+    display: block;
+    margin: 0px auto;
+}
+
+#btn1{
+    background:rgb(121, 121, 248);
+    border-radius: 28px;
+    width: 120px;
+    margin-left: 140px;
+}
+
+#divformulario{
+text-align: center;
+
+}
+
+.input{
+    width: 90%;
+    margin: 15px;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+
+
+.inputComentario{
+    width: 90%;
+    margin: 15px;
+    height: 100px;
+    border-radius: 10px;
+}
+#comentario{
+    height: 100px;
+}
+
+#btnenviar{
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 15px;
+}
+
+#btnvolver{
+    font-family: cursive;
+    font-size: 15px;
+    width: 10%;
+    text-decoration: none;
+
+}
