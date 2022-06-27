@@ -1,9 +1,6 @@
 // import {mostrarDestinos} from './mostrarDestinos.js'
 import {lugares} from './data.js'
 
-// let btn2 = document.querySelector('#linkDetalle');
-// let nombre = document.querySelector('#nomDestino');
-// let imgdestino = document.querySelector('#imgcontinente');
 
     let vermas = 0;
     let dest2 = ""
@@ -12,7 +9,7 @@ import {lugares} from './data.js'
         vermas =  target.name
         let filtrado = lugares.find(f => f.id == vermas);
         localStorage.setItem('filtrado',JSON.stringify(filtrado));
-        let dest2  =   JSON.parse(localStorage.getItem('filtrado'));
+        // let dest2  =   JSON.parse(localStorage.getItem('filtrado'));
         let lugarDestino = dest2.lugar;        
         })
 
@@ -55,6 +52,9 @@ import {lugares} from './data.js'
         // alert(continenteDestino)
         document.querySelector('#continenteDestino').innerHTML= destinoFinal.descripcion;
         document.querySelector('#imagenContinente').setAttribute('src',imagenContinente);
+
+        document.querySelector('#inputDestino').setAttribute('placeholder',destinoFinal.lugar);
+        document.querySelector('#inputContinente').setAttribute('placeholder',continenteDestino);
 
         document.querySelector('#inputDestino').setAttribute('placeholder',destinoFinal.lugar);
         document.querySelector('#inputContinente').setAttribute('placeholder',continenteDestino);

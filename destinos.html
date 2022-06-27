@@ -12,9 +12,7 @@
 <body>
     <div id="general">
         <div id="div1">
-            <a 
-            
-          id="volver"  href="./index.html">Volver</a>
+            <a href="./index.html" id="volver">Volver</a>
             <div id="container" class="m-5 gap-3 row" >  
                     <img id="imagenDestino"  src="../imagenes/3_img_europa.jpg" class="card-img-top " alt="...">
                     <h5 id="nomDestino">Destinoooooo</h5>
@@ -24,18 +22,40 @@
         </div>
 
         <div id="div2">
-            <form action="">
+            <form id="formulario">
+                
+                <label for="cliente">Nombre y apellido<label>
+                <input id="cliente" class="input"  type="text" placeholder="Ingresa tu nombre y apellido"  name="nombre"/>
+
+                <label for="tipoDocumento">Tipo de documento</label> <br>
+                <select id="tipoDocumento" name="tipoDocumento" class="input" >
+                    <option value="0" selected disabled>Selecciona una opción</option>
+                    <option value="CC">CC</option>
+                    <option value="CE">CE</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="PEP">PEP</option>
+                    <option value="PPT">PPT</option>
+                </select>
+
+                <label for="documento" class="input">Número de documento</label>
+                <input  id="documento" class="input"  type="text" placeholder="1111111" name="numeroDocumento"  >
+
                 <input id="inputDestino"  class="input"  type="text" placeholder="cvcvc" disabled>
                 <input id="inputContinente"   class="input"  type="text" placeholder="cvcvc" disabled>
-                <label for="name" >Fecha de partida</label>
-                <input class="input"  type="date" placeholder="cvcvc">
-                <label for="name" >Fecha de retorno</label>
-                <input class="input"  type="date" placeholder="cvcvc">
-                <input class="inputComentario"  type="text" placeholder="Comentario">
-                <button id="btn1">enviar</button>
+
+                <label for="fechaPartida">Fecha de partida</label>
+                <input  id="fechaPartida" class="input"  type="date" name="fechaPartida">
+
+                <label for="fechaRetorno" required >Fecha de retorno</label>
+                <input id="fechaRetorno" class="input"  type="date" placeholder="cvcvc" name="fechaRetorno">
+
+                <input id="comentario" class="inputComentario"  type="text" placeholder="Comentario">
+                <button id="btn1" type="submit">enviar</button>
             </form>
         </div>
     </div>        
 </body>
 <script src="./script/destinos.js" type="module"></script>
+<script src="./script/evento.js" type="module"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
